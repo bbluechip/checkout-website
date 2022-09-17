@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+  margin-top: 1rem;
+}
+
+/***  FORM ***/
+
+form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3rem;
+  text-align: left;
+}
+.kutu {
+  margin: 10px 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+form i {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.5rem;
+  color: rgb(117, 111, 111);
+}
+
+form .alt {
+  width: 100%;
+}
+
+label {
+  width: 90%;
+}
+
+input:not(#x) {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  padding-left: 2rem;
+  border: 1px solid rgb(161, 158, 158);
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  padding-left: 2rem;
+}
+
+.ulke {
+  display: inline-block;
+  width: 30%;
+}
+.posta {
+  display: inline-block;
+  width: 68%;
+}
+
+/******  BOX -*******/
+
+.box {
+  flex-direction: column;
+  width: 400px;
+  height: 570px;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  background-color: #eeeeee;
+  border-radius: 15px;
+}
+
+.box .resim {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  width: 100%;
+}
+
+.box .resim .yan {
+  padding: 10px 0;
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+}
+
+.box .resim .yan .üst p {
+  margin-top: 0.4rem;
+  text-align: left;
+}
+
+.box .resim .yan .alt {
+  display: flex;
+  gap: 1rem;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid rgb(150, 136, 136);
+}
+
+.page-header {
+  border-radius: 20px;
+  padding: 1rem;
+  color: orange;
+}
+h1 {
+  font-size: 50px;
+  color: orange;
+}
+
+h2 {
+  font-size: 20px;
+}
+form h1 {
+  font-size: 25px;
+}
+
+.fiyat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgb(150, 136, 136);
+}
+.ürün {
+  margin-top: 1.5rem;
+}
+
+img {
+  width: 50%;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+span {
+  text-decoration: line-through;
+  font-size: 13px;
+}
+strong {
+  color: orange;
+}
+
+#btn {
+  padding: 1rem 1rem;
+  border-radius: 15px;
+  background-color: orange;
+  color: white;
+  border: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+main {
+  justify-content: space-between;
+}
+#btn:hover {
+  background-color: white;
+  color: orange;
+}
+
+button {
+  cursor: pointer;
+}
+#btn:hover {
+  box-shadow: 0px 0px 10px 5px rgb(105, 100, 100);
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  main {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  .box {
+    order: 1;
+  }
+  form {
+    order: 2;
+  }
+}
